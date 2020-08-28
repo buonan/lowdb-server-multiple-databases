@@ -11,15 +11,15 @@ module.exports = (req, res, next) => {
 ```
 
 ```bash
-json-server db.json --middlewares ./hello.js
-json-server db.json --middlewares ./first.js ./second.js
+node index.js --middlewares ./hello.js
+node index.js --middlewares ./first.js ./second.js
 ```
 
-### Add routes
+### Add database(s) routes
 
-You can add your middlewares from the CLI using `--routes` option:
+You can add your middlewares from the CLI using `--db` option:
 
 ```bash
-json-server db.json --routes ./db1.json
-json-server db.json --routes ./db1.json ./db2.json
+node index.js --db ./db1.json
+node index.js --db ./db1.json ./db2.json
 ```
