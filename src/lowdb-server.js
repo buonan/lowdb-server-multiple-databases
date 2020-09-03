@@ -30,7 +30,7 @@ module.exports = {
     }
 
     app.listen(port, () => {
-      console.log(`Example app listening at http://${host}:${port}`)
+      console.log(`Server listening at http://${host}:${port}`)
     })
   }
 }
