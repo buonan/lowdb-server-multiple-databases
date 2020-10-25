@@ -1,13 +1,14 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "node --nolazy --inspect-brk=9229 ./index.js",
-    "dev": "NODE_ENV=development node ./index.js",
-    "start": "node ./index.js"
+    "debug": "node --nolazy --inspect-brk=9229 ./index.js --config config.json",
+    "debug-config": "node --nolazy --inspect-brk=9229 ./index.js --config config.json",
+    "dev": "NODE_ENV=development node -- ./index.js --config config.json",
+    "start": "NODE_ENV=production node -- ./index.js --config config.json"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "express": "^4.17.1",
     "faker": "^5.0.0",
     "file-system": "^2.2.2",
+    "json-parse-helpfulerror": "^1.0.3",
     "json-server": "^0.16.1",
     "loadash": "^1.0.0",
     "lodash-id": "^0.14.0",
@@ -28,6 +30,7 @@
     "nodemon": "^2.0.4",
     "path": "^0.12.7",
     "pluralize": "^8.0.0",
+    "server-destroy": "^1.0.1",
     "url": "^0.11.0",
     "yargs": "^15.4.1"
   }

@@ -7,6 +7,15 @@ const argv = yargs
   .config('config')
   .usage('$0 [options] <source>')
   .options({
+    useAsync: {
+      alias: 'a',
+      description: 'Enable FileAsync',
+      default: false
+    },
+    watch: {
+      alias: 'w',
+      description: 'Watch file(s)'
+    },
     port: {
       alias: 'p',
       description: 'Set port',

@@ -23,6 +23,7 @@ module.exports = (req, res, next) => {
 ```bash
 node index.js --middlewares ./hello.js --db db.json
 node index.js --middlewares ./first.js ./second.js --db db1.json db2.json
+node index.js --config config.json
 ```
 
 ## Add database(s) routes
